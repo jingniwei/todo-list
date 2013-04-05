@@ -26,7 +26,7 @@
 						<div class="view">
 							<input class="toggle" type="checkbox" ng-model="todo.completed">
 							<label ng-dblclick="editTodo(todo)">{{todo.title}}</label>
-							<label>Assigned to:{{todo.assignee}} </label>
+							<label>Assigned to: {{todo.assignee}} </label>
 								 <select ng-hide="selection" ng-change= "selectChanged(selection, todo)" id="name_drop" ng:options="list.name for list in assignList" ng:model="selection" >
 								 </select>
 							<button class="destroy" ng-click="removeTodo(todo)"></button>
